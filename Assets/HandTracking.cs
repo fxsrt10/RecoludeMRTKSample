@@ -76,42 +76,40 @@ public class HandTracking : MonoBehaviour
 
         // Right Hand
         recorder = new Recorder();
-        
-        recorder.Register(XR_Origin.Camera.gameObject, "Head Pose").SetMetaData("recolude-model", "https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/2CylinderEngine/glTF-Binary/2CylinderEngine.glb");
+        string url = "https://app.recolude.com/webplayer-assets/clients/recolude/";
+        recorder.Register(XR_Origin.Camera.gameObject, "Head Pose").SetMetaData("recolude-model", url + "thaboo.glb");
         //recorder.SetMetaData("recolude-model", "https://app.recolude.com/webplayer-assets/clients/unity-virtual-forest/EuropeanRabbit.glb");
-        recorder.Register(soul, "Soul Gem");
-        recorder.Register(space, "Space Gem");
-        recorder.Register(time, "Time Gem");
-        recorder.Register(reality, "Reality Gem");
-        recorder.Register(mind, "Mind Gem");
-        recorder.Register(power, "Power Gem");
+        recorder.Register(soul, "Soul Gem").SetMetaData("recolude-model", url+"Stone.glb"); 
+        recorder.Register(space, "Space Gem").SetMetaData("recolude-model", url + "Stone.glb");
+        recorder.Register(time, "Time Gem").SetMetaData("recolude-model", url + "Stone.glb");
+        recorder.Register(reality, "Reality Gem").SetMetaData("recolude-model", url + "Stone.glb");
+        recorder.Register(mind, "Mind Gem").SetMetaData("recolude-model", url + "Stone.glb");
+        recorder.Register(power, "Power Gem").SetMetaData("recolude-model", url + "Stone.glb");
 
-        recorder.Register(middletip, "middletip");
-        recorder.Register(middlemid, "middlemid");
-        recorder.Register(middleprox, "middleprox");
-        recorder.Register(middleholder, "middleholder");
+        recorder.Register(middletip, "middletip").SetMetaData("recolude-model", url + "middletip.glb");
+        recorder.Register(middlemid, "middlemid").SetMetaData("recolude-model", url + "middletip.glb");
+        recorder.Register(middleprox, "middleprox").SetMetaData("recolude-model", url + "middletip.glb");
+        recorder.Register(middleholder, "middleholder").SetMetaData("recolude-model", url + "gemHolder.glb");
 
-        recorder.Register(ringtip, "ringtip");
-        recorder.Register(ringmid,"ringmid");
-        recorder.Register(ringprox,"ringprox");
-        recorder.Register(ringholder,"ringholder");
+        recorder.Register(ringtip, "ringtip").SetMetaData("recolude-model", url + "ringTip.glb");
+        recorder.Register(ringmid,"ringmid").SetMetaData("recolude-model", url + "ringTip.glb");
+        recorder.Register(ringprox,"ringprox").SetMetaData("recolude-model", url + "ringTip.glb");
+        recorder.Register(ringholder,"ringholder").SetMetaData("recolude-model", url + "gemHolder.glb");
 
-        recorder.Register(pinkytip, "pinkytip");
-        recorder.Register(pinkymid, "pinkymid");
-        recorder.Register(pinkyprox, "pinkyprox");
-        recorder.Register(pinkyholder, "pinkyholder");
+        recorder.Register(pinkytip, "pinkytip").SetMetaData("recolude-model", url + "pinkeyTip.glb");
+        recorder.Register(pinkymid, "pinkymid").SetMetaData("recolude-model", url + "pinkymid.glb");
+        recorder.Register(pinkyprox, "pinkyprox").SetMetaData("recolude-model", url + "pinkyProx.glb");
+        recorder.Register(pinkyholder, "pinkyholder").SetMetaData("recolude-model", url + "gemHolder.glb");
 
         recorder.Register(indextip, "pinkytip");
         recorder.Register(indexmid, "pinkymid");
         recorder.Register(indexprox, "pinkyprox");
         recorder.Register(indexholder, "pinkyholder");
 
-        // Left Hand
 
 
 
-
-        recorder.Register(palm, "palm");
+        recorder.Register(palm, "palm").SetMetaData("recolude-model", url + "PalmBackCombined.glb");
 
         recorder.Start();
         firstStone = true;
