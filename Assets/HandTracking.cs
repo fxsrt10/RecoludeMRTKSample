@@ -205,11 +205,11 @@ public class HandTracking : MonoBehaviour
         palm.transform.rotation = jointPose.Rotation;
     }
 
-    private void OnGUI()
+    public void Save()
     {
         // If the recorder is currently recording and the player clicks
         // save...
-        if (recorder.CurrentlyRecording() && GUILayout.Button("Save"))
+        if (recorder.CurrentlyRecording())
         {
             // Create a recording with all captured events up to this
             // point and stop the recorder from accepting any new
