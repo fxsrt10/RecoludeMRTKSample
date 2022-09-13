@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e46294d921b06245ba38c32f3cef32f, type: 3}
+  m_Name: RecoludeConfig
+  m_EditorClassIdentifier: 
+  apiKey: R2DF74U4NApBjBOfDBltPTLKyB2fK3Z5QYq8l8YwHDsdNog8Aqsq9eqLzQNpWTqf
+  projectID: 27e8cf50-7d6c-48f8-8b0f-39ab201aef90
+  organizationID: a0fe9580-53e9-45f8-b31b-dd476be2fb68
+  defaultUploadVisibility: 0
